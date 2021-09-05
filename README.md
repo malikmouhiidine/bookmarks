@@ -1,10 +1,12 @@
 # Learning Lists
 
-Create lists to organize books and articles to read and more, at least that's my use case for the program.
+Create lists to organize books and articles to read, at least that's my use case for the program.
+
+![demonstration](https://user-images.githubusercontent.com/73129654/132126037-0569cfc4-0b9d-4359-9a38-9da6207b5400.gif)
 
 # At a Bigger scope
 
-you can think of it as browser bookmarks but for URLs, files, and executables
+You can think of it as browser bookmarks but for URLs, files, and executables
 
 ### Installation
 
