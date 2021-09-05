@@ -6,7 +6,7 @@ Create lists to organize books and articles to read, at least that's my use case
 
 # At a Bigger scope
 
-You can think of it as browser bookmarks but for URLs, files, and executables
+You can think of it as browser bookmarks where folders are lists and sites could be URLs or files in the system or executables
 
 ### Installation
 
@@ -25,11 +25,12 @@ You can think of it as browser bookmarks but for URLs, files, and executables
    ```sh
    node index.js
    ```
-   Furthermore, you can use a symlink to run the program from wherever you are, Check out this [blog](https://dev.to/unorthodev/utilizing-symbolic-links-in-your-node-js-projects-17bo) for more information, From there it's pretty simple to use the program.
+   Furthermore, you can use a symlink to run the program from wherever you are in the file system, Check out this [blog](https://dev.to/unorthodev/utilizing-symbolic-links-in-your-node-js-projects-17bo) for more information, From there it's pretty simple to use the program.
 
 ## TODOs
 
 - [ ] Convert To typescript. javascript is driving me crazy
+- [ ] Add a way to edit items
 
 ## Contributing
 
