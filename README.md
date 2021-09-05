@@ -25,7 +25,7 @@ You can think of it as browser bookmarks but for URLs, files, and executables
    ```sh
    node index.js
    ```
-   Furthermore, you can use a symlink to run the program from wherever you are, Check out this [blog](https://dev.to/unorthodev/utilizing-symbolic-links-in-your-node-js-projects-17bo) for more information.
+   Furthermore, you can use a symlink to run the program from wherever you are, Check out this [blog](https://dev.to/unorthodev/utilizing-symbolic-links-in-your-node-js-projects-17bo) for more information, From there it's pretty simple to use the program.
 
 ## TODOs
 
