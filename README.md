@@ -15,7 +15,7 @@ You can think of it as browser bookmarks where folders are lists and sites could
 
 1. Clone the repo
    ```sh
-   git clone
+   git clone https://github.com/malikmouhiidine/learning-lists.git
    ```
 2. Install NPM packages
    ```sh
