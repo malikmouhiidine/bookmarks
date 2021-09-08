@@ -1,11 +1,11 @@
-const openItem = require("./openItem");
-const createNewItem = require("./createNewItem");
-const removeItem = require("./removeItem");
-const { prompt, Separator } = require("inquirer");
-const getLists = require("./getLists");
-const changeItemsOrder = require("./changeItemsOrder");
+import openItem from "./openItem";
+import createNewItem from "./createNewItem";
+import removeItem from "./removeItem";
+import { prompt, Separator } from "inquirer";
+import getLists from "./getLists";
+import changeItemsOrder from "./changeItemsOrder";
 
-async function showList(listIndex) {
+export default async function showList(listIndex: number) {
   const lists = getLists();
   const { items } = lists[listIndex];
 
@@ -37,9 +37,7 @@ async function showList(listIndex) {
     return;
   } else {
     const choosedItem = items.find((item) => item.title === choosedItemTitle);
-    await openItem(choosedItem.src);
+    await openItem(choosedItem && choosedItem.src);
     await showList(listIndex);
   }
 }
-
-module.exports = showList;

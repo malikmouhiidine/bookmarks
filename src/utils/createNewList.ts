@@ -1,10 +1,9 @@
-const getLists = require("./getLists");
-const createNewItem = require("./createNewItem");
-const { writeFileSync } = require("jsonfile");
-const { prompt } = require("inquirer");
-const writeLists = require("./writeLists");
+import getLists from "./getLists";
+import createNewItem from "./createNewItem";
+import { prompt } from "inquirer";
+import writeLists from "./writeLists";
 
-async function createNewList() {
+export default async function createNewList() {
   let lists = getLists();
 
   const { newListTitle } = await prompt({
@@ -38,6 +37,6 @@ async function createNewList() {
   if (addaNewItem === "y") {
     await createNewItem(newList.title);
   }
-}
 
-module.exports = createNewList;
+  return lists.length - 1;
+}

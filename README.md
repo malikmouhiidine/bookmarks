@@ -44,8 +44,8 @@ Contributions are what make the open source community such an amazing place to l
 
 ## Acknowledgements
 
-* [Inquirer.js](https://github.com/SBoudrias/Inquirer.js)
-* [open](https://github.com/sindresorhus/open)
+- [Inquirer.js](https://github.com/SBoudrias/Inquirer.js)
+- [open](https://github.com/sindresorhus/open)
 
 ## License
 

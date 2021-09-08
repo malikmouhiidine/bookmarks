@@ -1,5 +1,3 @@
-function intro() {
+export default function intro() {
   console.log("🅛🅔🅐🅡🅝🅘🅝🅖 🅛🅘🅢🅣🅢");
 }
-
-module.exports = intro;

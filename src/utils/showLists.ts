@@ -1,11 +1,11 @@
-const getLists = require("./getLists");
-const showList = require("./showList");
-const createNewList = require("./createNewList");
-const removeList = require("./removeList");
-const { prompt, Separator } = require("inquirer");
-const changeListsOrder = require("./changeListsOrder");
+import getLists from "./getLists";
+import showList from "./showList";
+import createNewList from "./createNewList";
+import removeList from "./removeList";
+import { prompt, Separator } from "inquirer";
+import changeListsOrder from "./changeListsOrder";
 
-async function showLists() {
+export default async function showLists() {
   const lists = getLists();
 
   const { choosedListTitle } = await prompt({
@@ -27,15 +27,17 @@ async function showLists() {
   );
 
   if (choosedListTitle === "add a new list") {
-    await createNewList();
+    const listIndex = await createNewList();
+    await showList(listIndex);
+    await showLists();
   } else if (choosedListTitle === "remove a list") {
     await removeList();
+    await showLists();
   } else if (choosedListTitle === "change order") {
     await changeListsOrder();
+    await showLists();
   } else {
     await showList(choosedListIndex);
+    await showLists();
   }
-  await showLists();
 }
-
-module.exports = showLists;

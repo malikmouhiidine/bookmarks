@@ -1,8 +1,8 @@
-const { prompt } = require("inquirer");
-const getLists = require("./getLists");
-const writeLists = require("./writeLists");
+import { prompt } from "inquirer";
+import getLists from "./getLists";
+import writeLists from "./writeLists";
 
-async function changeListsOrder() {
+export default async function changeListsOrder() {
   let lists = getLists();
 
   const { listTitleToChangeOrder } = await prompt({
@@ -31,5 +31,3 @@ async function changeListsOrder() {
 
   writeLists(lists);
 }
-
-module.exports = changeListsOrder;

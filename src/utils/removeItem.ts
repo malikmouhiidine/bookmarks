@@ -1,9 +1,8 @@
-const getLists = require("./getLists");
-const { writeFileSync } = require("jsonfile");
-const { prompt } = require("inquirer");
-const writeLists = require("./writeLists");
+import getLists from "./getLists";
+import { prompt } from "inquirer";
+import writeLists from "./writeLists";
 
-async function removeItem(listTitle) {
+export default async function removeItem(listTitle: string) {
   let lists = getLists();
   const listIndex = lists.findIndex((list) => list.title === listTitle);
 
@@ -22,5 +21,3 @@ async function removeItem(listTitle) {
 
   writeLists(lists);
 }
-
-module.exports = removeItem;

@@ -1,3 +1,4 @@
 /node_modules
+/dist
 lists_backup.json
 lists.json

@@ -1,10 +1,8 @@
-const showLists = require("./showLists");
-const { writeFileSync } = require("jsonfile");
-const getLists = require("./getLists");
-const { prompt } = require("inquirer");
-const writeLists = require("./writeLists");
+import getLists from "./getLists";
+import { prompt } from "inquirer";
+import writeLists from "./writeLists";
 
-async function removeList() {
+export default async function removeList() {
   let lists = getLists();
 
   const { choosedListTitle } = await prompt({
@@ -22,5 +20,3 @@ async function removeList() {
 
   writeLists(lists);
 }
-
-module.exports = removeList;

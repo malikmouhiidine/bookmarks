@@ -1,8 +1,8 @@
-const getLists = require("./getLists");
-const { prompt } = require("inquirer");
-const writeLists = require("./writeLists");
+import getLists from "./getLists";
+import writeLists from "./writeLists";
+import { prompt } from "inquirer";
 
-async function createNewItem(listTitle) {
+export default async function createNewItem(listTitle: string) {
   let lists = getLists();
   const list = lists.find((list) => list.title === listTitle);
 
@@ -11,7 +11,7 @@ async function createNewItem(listTitle) {
     name: "newItemTitle",
     message: "what's the title",
     validate: (input) => {
-      if (!list.items.find((item) => item.title === input)) {
+      if (list && !list.items.find((item) => item.title === input)) {
         return true;
       }
 
@@ -30,7 +30,7 @@ async function createNewItem(listTitle) {
     src: newItemSrc,
   };
 
-  lists.find((list) => list.title === listTitle).items.push(newItem);
+  lists.find((list) => list.title === listTitle)?.items.push(newItem);
 
   writeLists(lists);
 
@@ -44,5 +44,3 @@ async function createNewItem(listTitle) {
     await createNewItem(listTitle);
   }
 }
-
-module.exports = createNewItem;
