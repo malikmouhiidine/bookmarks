@@ -6,6 +6,11 @@ Create lists to organize books and articles to read, at least that's my use case
 
 You can think of it as browser bookmarks where folders are lists and sites could be URLs or files in the system or executables
 
+# Features
+
+- create/remove/edit lists
+- create/remove/edit/open items
+
 ### Installation
 
 1. Clone the repo
@@ -29,7 +34,7 @@ You can think of it as browser bookmarks where folders are lists and sites could
 ## TODOs
 
 - [x] Convert To typescript. javascript is driving me crazy
-- [ ] Add a way to edit items
+- [x] Add a way to edit items/list
 
 ## Contributing
 

@@ -1,6 +1,7 @@
 import openItem from "./openItem";
 import createNewItem from "./createNewItem";
 import removeItem from "./removeItem";
+import editItem from "./editItem";
 import { prompt, Separator } from "inquirer";
 import getLists from "./getLists";
 import changeItemsOrder from "./changeItemsOrder";
@@ -17,6 +18,7 @@ export default async function showList(listIndex: number) {
       ...items.map((item) => item.title),
       new Separator(),
       "add a new item",
+      "edit an item",
       "remove an item",
       "change order",
       "return",
@@ -26,6 +28,9 @@ export default async function showList(listIndex: number) {
 
   if (choosedItemTitle === "add a new item") {
     await createNewItem(lists[listIndex].title);
+    await showList(listIndex);
+  } else if (choosedItemTitle === "edit an item") {
+    await editItem(lists[listIndex].title);
     await showList(listIndex);
   } else if (choosedItemTitle === "remove an item") {
     await removeItem(lists[listIndex].title);
