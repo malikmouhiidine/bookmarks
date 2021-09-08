@@ -7,6 +7,8 @@ import changeListsOrder from "./changeListsOrder";
 import { prompt, Separator } from "inquirer";
 
 export default async function showLists() {
+  console.clear();
+
   const lists = getLists();
 
   const { choosedListTitle } = await prompt({

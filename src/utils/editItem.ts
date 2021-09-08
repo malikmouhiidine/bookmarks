@@ -28,7 +28,7 @@ export default async function editItem(listTitle: string) {
   const { newItemSrc } = await prompt({
     type: "input",
     name: "newItemSrc",
-    message: "title",
+    message: "src",
     default: item?.src,
   });
 

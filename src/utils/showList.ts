@@ -7,6 +7,8 @@ import getLists from "./getLists";
 import changeItemsOrder from "./changeItemsOrder";
 
 export default async function showList(listIndex: number) {
+  console.clear();
+
   const lists = getLists();
   const { items } = lists[listIndex];
 
