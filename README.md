@@ -1,6 +1,6 @@
 # Learning Lists
 
-Create lists to organize books and articles to read, at least that's my use case for the program.
+A command line tool to Create lists to organize books and articles to read, at least that's my use case for the program.
 
 # At a Bigger scope
 
