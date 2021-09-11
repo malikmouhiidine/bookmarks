@@ -6,14 +6,14 @@ A command-line program to create and open bookmarks.
 
 You can think of it as browser bookmarks where folders are lists and sites are URLs or files/directories in the system or executables
 
-# Features
+## Features
 
 - create/remove/edit lists
 - create/remove/edit/open items
 - stores everything in a json file `lists.json`
 - a backup `lists_backup.json` file contains the last state of the `lists.json` in case you fudged up
 
-### Installation
+## Installation
 
 1. Clone the repo
    ```sh
