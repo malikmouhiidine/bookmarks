@@ -1,21 +1,23 @@
-# Learning Lists
+# Bookmarks
 
-A command line tool to Create lists to organize books and articles to read, at least that's my use case for the program.
+A command-line program to create and open bookmarks.
 
 # At a Bigger scope
 
-You can think of it as browser bookmarks where folders are lists and sites could be URLs or files in the system or executables
+You can think of it as browser bookmarks where folders are lists and sites are URLs or files in the system or executables
 
 # Features
 
 - create/remove/edit lists
 - create/remove/edit/open items
+- stores everything in a json file `lists.json`
+- a backup `lists_backup.json` file contains the last state of the `lists.json` in case you fudged up
 
 ### Installation
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/malikmouhiidine/learning-lists.git
+   git clone https://github.com/malikmouhiidine/bookmarks.git
    ```
 2. Install NPM packages
    ```sh

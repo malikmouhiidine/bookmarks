@@ -1,7 +1,7 @@
 {
-  "name": "learning-lists",
+  "name": "bookmarks",
   "version": "1.0.0",
-  "description": "Create lists to organize books and articles to read",
+  "description": "a bookmarks command-line program",
   "main": "index.js",
   "scripts": {
     "build": "tsc",
