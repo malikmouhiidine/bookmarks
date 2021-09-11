@@ -4,7 +4,7 @@ A command-line program to create and open bookmarks.
 
 # At a Bigger scope
 
-You can think of it as browser bookmarks where folders are lists and sites are URLs or files in the system or executables
+You can think of it as browser bookmarks where folders are lists and sites are URLs or files/directories in the system or executables
 
 # Features
 
