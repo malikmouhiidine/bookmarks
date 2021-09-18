@@ -1,5 +1,7 @@
 # Bookmarks
 
+![Bookmarks demonstration](https://user-images.githubusercontent.com/73129654/133909727-2b4b9e0e-da51-49bb-8323-0aab7ed97bf1.gif)
+
 A command-line program to create and open bookmarks.
 
 # At a Bigger scope
