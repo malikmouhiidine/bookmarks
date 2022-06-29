@@ -13,30 +13,21 @@ You can think of it as browser bookmarks where folders are lists and sites are U
 - stores everything in a json file `lists.json`
 - a backup `lists_backup.json` file contains the last state of the `lists.json` in case you fudged up
 
-### Installation
+### Usage
 
-1. Clone the repo
-   ```sh
-   git clone https://github.com/malikmouhiidine/bookmarks.git
-   ```
-2. Install NPM packages
-   ```sh
-   npm install
-   ```
+1. Install the package:
 
-## Usage
+```bash
+$ npm i bookmarks-cli
+```
 
-1. enter the root folder and run
-   ```sh
-   npm run build
-   node dist/index.js
-   ```
-   Furthermore, you can use a symlink to run the program from wherever you are in the file system, Check out this [blog](https://dev.to/unorthodev/utilizing-symbolic-links-in-your-node-js-projects-17bo) for more information, From there it's pretty simple to use the program.
+2. Run the command `bookmarks-cli`:
 
-## TODOs
+```bash
+$ bookmarks
+```
 
-- [x] Convert To typescript. javascript is driving me crazy
-- [x] Add a way to edit items/list
+From there it's pretty simple to use the cli tool.
 
 ## Contributing
 

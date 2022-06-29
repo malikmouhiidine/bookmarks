@@ -1,4 +1,5 @@
 /node_modules
 /dist
+/package_lock.json
 lists_backup.json
 lists.json

@@ -22,8 +22,8 @@ export default async function showLists() {
       "edit a list",
       "remove a list",
       "change order",
+      new Separator(),
     ],
-    loop: false,
   });
 
   const choosedListIndex = lists.findIndex(

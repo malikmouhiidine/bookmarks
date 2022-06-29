@@ -1,8 +1,13 @@
 {
-  "name": "bookmarks",
+  "name": "bookmarks-cli",
   "version": "1.0.0",
-  "description": "a bookmarks command-line program",
-  "main": "index.js",
+  "description": "A bookmarks command-line program",
+  "main": "dist/index.js",
+  "source": "src/index.ts",
+  "repository": "malikmouhiidine/bookmarks",
+  "bin": {
+    "bookmarks": "dist/index.js"
+  },
   "scripts": {
     "build": "tsc",
     "start": "tsc -w",
@@ -10,6 +15,10 @@
   },
   "author": "Malik Mouhiidine",
   "license": "MIT",
+  "keywords": [
+    "cli",
+    "bookmarks"
+  ],
   "dependencies": {
     "inquirer": "^8.1.2",
     "jsonfile": "^6.1.0",
