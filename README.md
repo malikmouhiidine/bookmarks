@@ -1,12 +1,16 @@
 # Bookmarks
 
+![version](https://img.shields.io/npm/v/bookmarks-cli)
+
+![Bookmarks demonstration](https://user-images.githubusercontent.com/73129654/133909727-2b4b9e0e-da51-49bb-8323-0aab7ed97bf1.gif)
+
 A command-line program to create and open bookmarks.
 
 # At a Bigger scope
 
-You can think of it as browser bookmarks where folders are lists and sites are URLs or files in the system or executables
+You can think of it as browser bookmarks where folders are lists and sites are items that could be URLs or files/directories in the system or executables
 
-# Features
+## Features
 
 - create/remove/edit lists
 - create/remove/edit/open items
